@@ -66,6 +66,50 @@ INSERT [dbo].[Product] ([ProductID], [ProductTypeID], [MaterialTypeID], [Name], 
 GO
 SET IDENTITY_INSERT [dbo].[Product] OFF
 GO
+SET IDENTITY_INSERT [dbo].[State] ON 
+GO
+INSERT [dbo].[State] ([StateID], [Name]) VALUES (11, N'Оформлен')
+GO
+INSERT [dbo].[State] ([StateID], [Name]) VALUES (12, N'Оплачен')
+GO
+INSERT [dbo].[State] ([StateID], [Name]) VALUES (13, N'В доставке')
+GO
+INSERT [dbo].[State] ([StateID], [Name]) VALUES (14, N'Выполнен')
+GO
+INSERT [dbo].[State] ([StateID], [Name]) VALUES (15, N'Отменен')
+GO
+SET IDENTITY_INSERT [dbo].[State] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Order] ON 
+GO
+INSERT [dbo].[Order] ([OrderID], [ClientName], [ClientPhone], [ClientEmail], [StateID], [DeliveryAddress], [DeliveryDate], [OrderDate], [Note], [Block], [DeliveryAddressStd], [Entrance], [Flat], [Floor], [House], [QC], [StreetWithType], [EmailNotification], [SmsNotification]) VALUES (10, N'Иванов Иван Иванович', N'89101234564', N'ivanov@mail.ru', 14, N'102103,Москва,ул.Петрова,д.5,кв.6', CAST(N'2023-05-02T00:00:00.0000000' AS DateTime2), CAST(N'2023-05-01T00:00:00.0000000' AS DateTime2), N'Примечание', N'ert', N'ertert', N'et', N'ert', N'etr', N'ert', N'ert', N'ertert', 1, 1)
+GO
+INSERT [dbo].[Order] ([OrderID], [ClientName], [ClientPhone], [ClientEmail], [StateID], [DeliveryAddress], [DeliveryDate], [OrderDate], [Note], [Block], [DeliveryAddressStd], [Entrance], [Flat], [Floor], [House], [QC], [StreetWithType], [EmailNotification], [SmsNotification]) VALUES (11, N'Петров Петр Петрович', N'89501234564', N'petrov@mail.ru', 12, N'102103,Москва,ул.Иванова,д.5,кв.6', CAST(N'2023-05-03T00:00:00.0000000' AS DateTime2), CAST(N'2023-05-02T00:00:00.0000000' AS DateTime2), NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1)
+GO
+INSERT [dbo].[Order] ([OrderID], [ClientName], [ClientPhone], [ClientEmail], [StateID], [DeliveryAddress], [DeliveryDate], [OrderDate], [Note], [Block], [DeliveryAddressStd], [Entrance], [Flat], [Floor], [House], [QC], [StreetWithType], [EmailNotification], [SmsNotification]) VALUES (12, N'Сидоров', N'929292', N'воововов', 15, N'влвлвл', NULL, CAST(N'2023-04-02T00:00:00.0000000' AS DateTime2), NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1)
+GO
+INSERT [dbo].[Order] ([OrderID], [ClientName], [ClientPhone], [ClientEmail], [StateID], [DeliveryAddress], [DeliveryDate], [OrderDate], [Note], [Block], [DeliveryAddressStd], [Entrance], [Flat], [Floor], [House], [QC], [StreetWithType], [EmailNotification], [SmsNotification]) VALUES (1035, N'Алексей', N'89506114274', N'lap-81@yandex.ru', 11, N'Академика Лебедева 8А', CAST(N'2023-06-07T11:30:00.0000000' AS DateTime2), CAST(N'2023-06-07T11:30:42.7965739' AS DateTime2), N'', N'', N'г Москва, ул Лебедева, д 8А', N'', N'', N'', N'8А', N'1', N'ул Лебедева', 1, 1)
+GO
+SET IDENTITY_INSERT [dbo].[Order] OFF
+GO
+SET IDENTITY_INSERT [dbo].[OrderProduct] ON 
+GO
+INSERT [dbo].[OrderProduct] ([Order_ProductID], [Quantity], [OrderID], [ProductID]) VALUES (1, 1, 10, 1020)
+GO
+INSERT [dbo].[OrderProduct] ([Order_ProductID], [Quantity], [OrderID], [ProductID]) VALUES (2, 2, 10, 1021)
+GO
+INSERT [dbo].[OrderProduct] ([Order_ProductID], [Quantity], [OrderID], [ProductID]) VALUES (3, 1, 11, 1020)
+GO
+INSERT [dbo].[OrderProduct] ([Order_ProductID], [Quantity], [OrderID], [ProductID]) VALUES (4, 2, 11, 1021)
+GO
+INSERT [dbo].[OrderProduct] ([Order_ProductID], [Quantity], [OrderID], [ProductID]) VALUES (5, 2, 10, 1020)
+GO
+INSERT [dbo].[OrderProduct] ([Order_ProductID], [Quantity], [OrderID], [ProductID]) VALUES (6, 2, 11, 1020)
+GO
+INSERT [dbo].[OrderProduct] ([Order_ProductID], [Quantity], [OrderID], [ProductID]) VALUES (10, 1, 11, 1022)
+GO
+SET IDENTITY_INSERT [dbo].[OrderProduct] OFF
+GO
 SET IDENTITY_INSERT [dbo].[StoneType] ON 
 GO
 INSERT [dbo].[StoneType] ([StoneTypeID], [Name]) VALUES (15, N'бриллиант')
@@ -127,4 +171,34 @@ GO
 INSERT [dbo].[Photo] ([PhotoID], [Is_Cover], [ProductID], [photoUrl], [VK_ID]) VALUES (13, 0, 1024, N'https://olimaimagestorage.blob.core.windows.net/images/1020_43_img2.jpg', NULL)
 GO
 SET IDENTITY_INSERT [dbo].[Photo] OFF
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20230412063554_init', N'7.0.5')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20230419095308_products2', N'6.0.15')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20230419102155_add-orders', N'6.0.15')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20230423073847_add-product-insert', N'6.0.15')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20230428052625_add_supply', N'6.0.15')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20230428055133_int-quantity', N'6.0.15')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20230510125521_add-storage', N'6.0.15')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20230510131053_remove-storage-dates', N'6.0.15')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20230513060025_add-gender', N'6.0.15')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20230518084646_correct_supply_orders', N'6.0.15')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20230523114942_add-vk-id', N'6.0.15')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20230528060954_add-std-adress', N'6.0.15')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20230601074308_add-notification', N'6.0.15')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20230606065310_delete-storage', N'6.0.15')
+GO
+INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20230606091418_new', N'6.0.16')
 GO
