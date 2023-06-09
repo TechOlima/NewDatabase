@@ -110,6 +110,42 @@ INSERT [dbo].[OrderProduct] ([Order_ProductID], [Quantity], [OrderID], [ProductI
 GO
 SET IDENTITY_INSERT [dbo].[OrderProduct] OFF
 GO
+SET IDENTITY_INSERT [dbo].[Supply] ON 
+GO
+INSERT [dbo].[Supply] ([SupplyID], [ShippingDate], [ReceivingDate], [IsReceived], [Note]) VALUES (6, CAST(N'2023-04-01T00:00:00.0000000' AS DateTime2), CAST(N'2023-04-01T00:00:00.0000000' AS DateTime2), 1, NULL)
+GO
+INSERT [dbo].[Supply] ([SupplyID], [ShippingDate], [ReceivingDate], [IsReceived], [Note]) VALUES (7, CAST(N'2023-04-02T00:00:00.0000000' AS DateTime2), CAST(N'2023-04-02T00:00:00.0000000' AS DateTime2), 1, NULL)
+GO
+INSERT [dbo].[Supply] ([SupplyID], [ShippingDate], [ReceivingDate], [IsReceived], [Note]) VALUES (8, CAST(N'2023-05-20T10:03:00.0000000' AS DateTime2), CAST(N'2023-05-24T10:12:00.0000000' AS DateTime2), 0, N'dfhdfhdhdfhfdgdfgdfg')
+GO
+INSERT [dbo].[Supply] ([SupplyID], [ShippingDate], [ReceivingDate], [IsReceived], [Note]) VALUES (1008, CAST(N'2023-06-08T10:37:00.0000000' AS DateTime2), NULL, 0, N'dgdfgdfgdfg')
+GO
+SET IDENTITY_INSERT [dbo].[Supply] OFF
+GO
+SET IDENTITY_INSERT [dbo].[SupplyProduct] ON 
+GO
+INSERT [dbo].[SupplyProduct] ([Supply_ProductID], [Quantity], [SupplyID], [ProductID]) VALUES (1, 2, 6, 1020)
+GO
+INSERT [dbo].[SupplyProduct] ([Supply_ProductID], [Quantity], [SupplyID], [ProductID]) VALUES (3, 2, 7, 1020)
+GO
+INSERT [dbo].[SupplyProduct] ([Supply_ProductID], [Quantity], [SupplyID], [ProductID]) VALUES (4, 3, 6, 1021)
+GO
+INSERT [dbo].[SupplyProduct] ([Supply_ProductID], [Quantity], [SupplyID], [ProductID]) VALUES (5, 3, 7, 1021)
+GO
+INSERT [dbo].[SupplyProduct] ([Supply_ProductID], [Quantity], [SupplyID], [ProductID]) VALUES (6, 5, 7, 1020)
+GO
+INSERT [dbo].[SupplyProduct] ([Supply_ProductID], [Quantity], [SupplyID], [ProductID]) VALUES (7, 3, 6, 1022)
+GO
+INSERT [dbo].[SupplyProduct] ([Supply_ProductID], [Quantity], [SupplyID], [ProductID]) VALUES (8, 2, 6, 1022)
+GO
+INSERT [dbo].[SupplyProduct] ([Supply_ProductID], [Quantity], [SupplyID], [ProductID]) VALUES (9, 1, 8, 1021)
+GO
+INSERT [dbo].[SupplyProduct] ([Supply_ProductID], [Quantity], [SupplyID], [ProductID]) VALUES (12, 3, 8, 1021)
+GO
+INSERT [dbo].[SupplyProduct] ([Supply_ProductID], [Quantity], [SupplyID], [ProductID]) VALUES (13, 3, 8, 1021)
+GO
+SET IDENTITY_INSERT [dbo].[SupplyProduct] OFF
+GO
 SET IDENTITY_INSERT [dbo].[StoneType] ON 
 GO
 INSERT [dbo].[StoneType] ([StoneTypeID], [Name]) VALUES (15, N'бриллиант')

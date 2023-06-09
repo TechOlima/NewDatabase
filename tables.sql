@@ -1,6 +1,6 @@
 USE [NewOlima]
 GO
-/****** Object:  Table [dbo].[__EFMigrationsHistory]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Table [dbo].[__EFMigrationsHistory]    Script Date: 09.06.2023 13:07:07 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -14,7 +14,7 @@ CREATE TABLE [dbo].[__EFMigrationsHistory](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[GenderType]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Table [dbo].[GenderType]    Script Date: 09.06.2023 13:07:07 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -28,7 +28,7 @@ CREATE TABLE [dbo].[GenderType](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Insert]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Table [dbo].[Insert]    Script Date: 09.06.2023 13:07:07 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -44,7 +44,7 @@ CREATE TABLE [dbo].[Insert](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[MaterialType]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Table [dbo].[MaterialType]    Script Date: 09.06.2023 13:07:07 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -59,7 +59,7 @@ CREATE TABLE [dbo].[MaterialType](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Order]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Table [dbo].[Order]    Script Date: 09.06.2023 13:07:07 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -90,7 +90,7 @@ CREATE TABLE [dbo].[Order](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[OrderProduct]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Table [dbo].[OrderProduct]    Script Date: 09.06.2023 13:07:07 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -106,7 +106,7 @@ CREATE TABLE [dbo].[OrderProduct](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Photo]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Table [dbo].[Photo]    Script Date: 09.06.2023 13:07:07 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -123,7 +123,7 @@ CREATE TABLE [dbo].[Photo](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Product]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Table [dbo].[Product]    Script Date: 09.06.2023 13:07:07 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -149,7 +149,7 @@ CREATE TABLE [dbo].[Product](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ProductType]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Table [dbo].[ProductType]    Script Date: 09.06.2023 13:07:07 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -163,7 +163,7 @@ CREATE TABLE [dbo].[ProductType](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[State]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Table [dbo].[State]    Script Date: 09.06.2023 13:07:07 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -177,7 +177,7 @@ CREATE TABLE [dbo].[State](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[StoneType]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Table [dbo].[StoneType]    Script Date: 09.06.2023 13:07:07 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -191,58 +191,103 @@ CREATE TABLE [dbo].[StoneType](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Index [IX_Insert_ProductID]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Table [dbo].[Supply]    Script Date: 09.06.2023 13:07:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Supply](
+	[SupplyID] [int] IDENTITY(1,1) NOT NULL,
+	[ShippingDate] [datetime2](7) NULL,
+	[ReceivingDate] [datetime2](7) NULL,
+	[IsReceived] [bit] NULL,
+	[Note] [nvarchar](max) NULL,
+ CONSTRAINT [PK_Supply] PRIMARY KEY CLUSTERED 
+(
+	[SupplyID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[SupplyProduct]    Script Date: 09.06.2023 13:07:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[SupplyProduct](
+	[Supply_ProductID] [int] IDENTITY(1,1) NOT NULL,
+	[Quantity] [int] NOT NULL,
+	[SupplyID] [int] NULL,
+	[ProductID] [int] NULL,
+ CONSTRAINT [PK_SupplyProduct] PRIMARY KEY CLUSTERED 
+(
+	[Supply_ProductID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Index [IX_Insert_ProductID]    Script Date: 09.06.2023 13:07:07 ******/
 CREATE NONCLUSTERED INDEX [IX_Insert_ProductID] ON [dbo].[Insert]
 (
 	[ProductID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_Insert_StoneTypeID]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Index [IX_Insert_StoneTypeID]    Script Date: 09.06.2023 13:07:07 ******/
 CREATE NONCLUSTERED INDEX [IX_Insert_StoneTypeID] ON [dbo].[Insert]
 (
 	[StoneTypeID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_Order_StateID]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Index [IX_Order_StateID]    Script Date: 09.06.2023 13:07:07 ******/
 CREATE NONCLUSTERED INDEX [IX_Order_StateID] ON [dbo].[Order]
 (
 	[StateID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_OrderProduct_OrderID]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Index [IX_OrderProduct_OrderID]    Script Date: 09.06.2023 13:07:07 ******/
 CREATE NONCLUSTERED INDEX [IX_OrderProduct_OrderID] ON [dbo].[OrderProduct]
 (
 	[OrderID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_OrderProduct_ProductID]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Index [IX_OrderProduct_ProductID]    Script Date: 09.06.2023 13:07:07 ******/
 CREATE NONCLUSTERED INDEX [IX_OrderProduct_ProductID] ON [dbo].[OrderProduct]
 (
 	[ProductID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_Photo_ProductID]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Index [IX_Photo_ProductID]    Script Date: 09.06.2023 13:07:07 ******/
 CREATE NONCLUSTERED INDEX [IX_Photo_ProductID] ON [dbo].[Photo]
 (
 	[ProductID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_Product_GenderTypeID]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Index [IX_Product_GenderTypeID]    Script Date: 09.06.2023 13:07:07 ******/
 CREATE NONCLUSTERED INDEX [IX_Product_GenderTypeID] ON [dbo].[Product]
 (
 	[GenderTypeID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_Product_MaterialTypeID]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Index [IX_Product_MaterialTypeID]    Script Date: 09.06.2023 13:07:07 ******/
 CREATE NONCLUSTERED INDEX [IX_Product_MaterialTypeID] ON [dbo].[Product]
 (
 	[MaterialTypeID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
-/****** Object:  Index [IX_Product_ProductTypeID]    Script Date: 09.06.2023 13:00:02 ******/
+/****** Object:  Index [IX_Product_ProductTypeID]    Script Date: 09.06.2023 13:07:07 ******/
 CREATE NONCLUSTERED INDEX [IX_Product_ProductTypeID] ON [dbo].[Product]
 (
 	[ProductTypeID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+/****** Object:  Index [IX_SupplyProduct_ProductID]    Script Date: 09.06.2023 13:07:07 ******/
+CREATE NONCLUSTERED INDEX [IX_SupplyProduct_ProductID] ON [dbo].[SupplyProduct]
+(
+	[ProductID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+GO
+/****** Object:  Index [IX_SupplyProduct_SupplyID]    Script Date: 09.06.2023 13:07:07 ******/
+CREATE NONCLUSTERED INDEX [IX_SupplyProduct_SupplyID] ON [dbo].[SupplyProduct]
+(
+	[SupplyID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[Insert]  WITH CHECK ADD  CONSTRAINT [FK_Insert_Product_ProductID] FOREIGN KEY([ProductID])
@@ -293,6 +338,16 @@ ALTER TABLE [dbo].[Product]  WITH CHECK ADD  CONSTRAINT [FK_Product_ProductType_
 REFERENCES [dbo].[ProductType] ([ProductTypeID])
 GO
 ALTER TABLE [dbo].[Product] CHECK CONSTRAINT [FK_Product_ProductType_ProductTypeID]
+GO
+ALTER TABLE [dbo].[SupplyProduct]  WITH CHECK ADD  CONSTRAINT [FK_SupplyProduct_Product_ProductID] FOREIGN KEY([ProductID])
+REFERENCES [dbo].[Product] ([ProductID])
+GO
+ALTER TABLE [dbo].[SupplyProduct] CHECK CONSTRAINT [FK_SupplyProduct_Product_ProductID]
+GO
+ALTER TABLE [dbo].[SupplyProduct]  WITH CHECK ADD  CONSTRAINT [FK_SupplyProduct_Supply_SupplyID] FOREIGN KEY([SupplyID])
+REFERENCES [dbo].[Supply] ([SupplyID])
+GO
+ALTER TABLE [dbo].[SupplyProduct] CHECK CONSTRAINT [FK_SupplyProduct_Supply_SupplyID]
 GO
 USE [master]
 GO
